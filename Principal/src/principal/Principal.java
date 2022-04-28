@@ -20,18 +20,17 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Matricula matricula1;
+        Matricula matricula1 = new Matricula();
         ArrayList<Assignatura> lista = new ArrayList();
         String nomAssig = "Assignatura ";
         int hores = 3, credits = 5;
         boolean disponible = true;
-        Estudiante persona = new Estudiante("20489640K", "Aitor", "Rodriguez", 20);
 
         for (int i = 1; i <= 5; i++) {
             lista.add(new Assignatura(i, nomAssig + i, hores, credits, disponible));
         }
 
-        matricula1 = new Matricula(1, persona, 5, lista);
+        matricula1 = new Matricula(1, "Aitor", "Rodriguez", "20489640K", 5, lista);
 
         System.out.print("Cost de la matricula " + matricula1.costMatricula());
 
