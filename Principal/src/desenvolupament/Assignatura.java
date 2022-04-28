@@ -5,7 +5,7 @@
 package desenvolupament;
 
 /**
- *
+ * Clase para crear assignaturas
  * @author aitgal
  */
 public class Assignatura {

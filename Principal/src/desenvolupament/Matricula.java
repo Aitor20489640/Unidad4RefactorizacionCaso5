@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- *
+ * Clase para crear matriculas
  * @author aitgal
  */
 public class Matricula {
@@ -79,7 +79,10 @@ public class Matricula {
         this.assignatures = assignatures;
     }
 
-    
+    /**
+     * Metodo para calcular el coste de la matricula
+     * @return Devuelve el coste de la matricula
+     */
     public float costMatricula() {
 
         float cost;

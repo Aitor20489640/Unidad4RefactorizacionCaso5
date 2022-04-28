@@ -9,12 +9,13 @@ import java.util.ArrayList;
 
 
 /**
- *
+ * Clase principal del programa
  * @author aitgal
  */
 public class Principal {
 
     /**
+     * Metodo principal del programa
      * @param args the command line arguments
      */
     public static void main(String[] args) {
