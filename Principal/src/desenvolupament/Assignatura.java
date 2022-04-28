@@ -16,7 +16,16 @@ public class Assignatura {
     private int hores = 0;
     public int credits = 0;
     private boolean disponible = false;
-
+    
+    
+    /**
+     * Contructor con todos los atributos de la clase Assignatura
+     * @param id Id de la asignatura
+     * @param nom Nombre de la asignatura
+     * @param hores Horas que hay que cursar de la asignatura
+     * @param credits Creditos que da la asignatura
+     * @param disponible Booleano para saber si la asignatura esta disponible
+     */
     public Assignatura(long id, String nom, int hores, int credits, boolean disponible) {
         this.id = id;
         this.nom = nom;

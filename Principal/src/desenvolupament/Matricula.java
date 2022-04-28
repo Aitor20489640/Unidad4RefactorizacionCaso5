@@ -21,10 +21,21 @@ public class Matricula {
     private Estudiante persona;
     private int curs = 0;
     private Collection assignatures;
-
+    
+    /**
+     * Constructor por defecto de la clase Matricula
+     */
     public Matricula() {
     }
-
+    
+    
+    /**
+     * Contructor con todos los atributos de la clase Matricula
+     * @param id Id de la matricula
+     * @param persona Estudiante que entrega la matricula
+     * @param curs Curso al que asiste el estudiante
+     * @param assignatures Lista de asignaturas que va a cursar el estudiante
+     */
     public Matricula(long id, Estudiante persona, int curs, Collection assignatures) {
         this.id = id;
         this.persona = persona; 

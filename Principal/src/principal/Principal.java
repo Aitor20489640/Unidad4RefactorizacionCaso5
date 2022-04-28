@@ -26,7 +26,8 @@ public class Principal {
         Estudiante persona = new Estudiante("20489640K", "Aitor", "Rodriguez", 20);
         int hores = 3, credits = 5;
         boolean disponible = true;
-
+        
+        //For para añadir asignaturas a la lista
         for (int i = 1; i <= 5; i++) {
             lista.add(new Assignatura(i, nomAssig + i, hores, credits, disponible));
         }

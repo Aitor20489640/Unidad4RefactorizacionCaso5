@@ -15,10 +15,21 @@ public class Estudiante {
     private String nom = "";
     private String cognom = "";
     private int edad = 5;//Asumimos que la edad minima para matricularse es 5 años
-
+    
+    /**
+     * Constructor por defecto para la clase Estudiante
+     */
+    
     public Estudiante() {
     }
-
+    
+    /**
+     * Contructor con todos los atributos de la clase Estudiante
+     * @param dni DNI del Estudiante
+     * @param nom Nombre del Estudiante
+     * @param cognom Apellidos del Estudiante
+     * @param edad Edad del Estudiante
+     */
     public Estudiante(String dni, String nom, String cognom, int edad) {
         this.dni = dni;
         this.nom = nom;
