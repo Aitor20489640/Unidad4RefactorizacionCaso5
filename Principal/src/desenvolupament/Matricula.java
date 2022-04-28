@@ -3,15 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package desenvolupament;
+
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
  * Clase para crear matriculas
+ *
  * @author aitgal
  */
 public class Matricula {
+
     public long id = 0;
     private String nom = "";
     private String cognoms = "";
@@ -81,6 +84,7 @@ public class Matricula {
 
     /**
      * Metodo para calcular el coste de la matricula
+     *
      * @return Devuelve el coste de la matricula
      */
     public float costMatricula() {

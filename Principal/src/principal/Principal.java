@@ -7,15 +7,16 @@ package principal;
 import desenvolupament.*;
 import java.util.ArrayList;
 
-
 /**
  * Clase principal del programa
+ *
  * @author aitgal
  */
 public class Principal {
 
     /**
      * Metodo principal del programa
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -24,14 +25,15 @@ public class Principal {
         String nomAssig = "Assignatura ";
         int hores = 3, credits = 5;
         boolean disponible = true;
-        
-        
-       
-        
-        
-        
+
+        for (int i = 1; i <= 5; i++) {
+            lista.add(new Assignatura(i, nomAssig + i, hores, credits, disponible));
+        }
+
+        matricula1 = new Matricula(1, "Aitor", "Rodriguez", "20489640K", 5, lista);
+
         System.out.print("Cost de la matricula " + matricula1.costMatricula());
-        
+
     }
 
 }

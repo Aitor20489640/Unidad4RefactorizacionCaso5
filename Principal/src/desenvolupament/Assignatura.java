@@ -6,6 +6,7 @@ package desenvolupament;
 
 /**
  * Clase para crear assignaturas
+ *
  * @author aitgal
  */
 public class Assignatura {
@@ -15,7 +16,6 @@ public class Assignatura {
     private int hores = 0;
     public int credits = 0;
     private boolean disponible = false;
-
 
     public Assignatura(long id, String nom, int hores, int credits, boolean disponible) {
         this.id = id;
@@ -65,7 +65,4 @@ public class Assignatura {
         this.disponible = disponible;
     }
 
-    
-    
-    
 }
