@@ -31,9 +31,58 @@ public class Matricula {
         this.assignatures = assignatures;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getCognoms() {
+        return cognoms;
+    }
+
+    public void setCognoms(String cognoms) {
+        this.cognoms = cognoms;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getCurs() {
+        return curs;
+    }
+
+    public void setCurs(int curs) {
+        this.curs = curs;
+    }
+
+    public Collection getAssignatures() {
+        return assignatures;
+    }
+
+    public void setAssignatures(Collection assignatures) {
+        this.assignatures = assignatures;
+    }
+
+    
     public float costMatricula() {
 
-        float cost = 0;
+        float cost;
         int credits = 0;
 
         for (Iterator iter = assignatures.iterator(); iter.hasNext();) {
