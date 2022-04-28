@@ -14,22 +14,20 @@ import java.util.Iterator;
  * @author aitgal
  */
 public class Matricula {
+    
+    private static final int COSTECREDITOS = 15;
 
     public long id = 0;
-    private String nom = "";
-    private String cognoms = "";
-    private String dni = "";
+    private Estudiante persona;
     private int curs = 0;
     private Collection assignatures;
 
     public Matricula() {
     }
 
-    public Matricula(long id, String nom, String cognoms, String dni, int curs, Collection assignatures) {
+    public Matricula(long id, Estudiante persona, int curs, Collection assignatures) {
         this.id = id;
-        this.nom = nom;
-        this.cognoms = cognoms;
-        this.dni = dni;
+        this.persona = persona; 
         this.curs = curs;
         this.assignatures = assignatures;
     }
@@ -43,27 +41,27 @@ public class Matricula {
     }
 
     public String getNom() {
-        return nom;
+        return persona.getNom();
     }
 
     public void setNom(String nom) {
-        this.nom = nom;
+        this.persona.setNom(nom);
     }
 
     public String getCognoms() {
-        return cognoms;
+        return persona.getCognom();
     }
 
     public void setCognoms(String cognoms) {
-        this.cognoms = cognoms;
+        this.persona.setCognom(cognoms);
     }
 
     public String getDni() {
-        return dni;
+        return persona.getDni();
     }
 
     public void setDni(String dni) {
-        this.dni = dni;
+        this.persona.setDni(dni);
     }
 
     public int getCurs() {
@@ -97,7 +95,7 @@ public class Matricula {
             credits = credits + element.credits;
         }
 
-        cost = credits * 15;
+        cost = credits * COSTECREDITOS;
         return cost;
     }
 }
