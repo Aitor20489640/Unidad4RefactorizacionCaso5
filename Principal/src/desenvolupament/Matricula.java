@@ -15,7 +15,7 @@ import java.util.Iterator;
  */
 public class Matricula {
     
-    private static final int COSTECREDITOS = 15;
+    private static final int COSTE_CREDITO = 15;
 
     private long id = 0;
     private Estudiante persona;
@@ -106,7 +106,7 @@ public class Matricula {
             credits = credits + element.getCredits();
         }
 
-        cost = credits * COSTECREDITOS;
+        cost = credits * COSTE_CREDITO;
         return cost;
     }
 }
