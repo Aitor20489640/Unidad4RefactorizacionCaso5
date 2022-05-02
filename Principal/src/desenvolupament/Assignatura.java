@@ -11,10 +11,10 @@ package desenvolupament;
  */
 public class Assignatura {
 
-    public long id = 0;
+    private long id = 0;
     private String nom = "";
     private int hores = 0;
-    public int credits = 0;
+    private int credits = 0;
     private boolean disponible = false;
     
     

@@ -17,7 +17,7 @@ public class Matricula {
     
     private static final int COSTECREDITOS = 15;
 
-    public long id = 0;
+    private long id = 0;
     private Estudiante persona;
     private int curs = 0;
     private Collection assignatures;
@@ -103,7 +103,7 @@ public class Matricula {
 
         for (Iterator iter = assignatures.iterator(); iter.hasNext();) {
             Assignatura element = (Assignatura) iter.next();
-            credits = credits + element.credits;
+            credits = credits + element.getCredits();
         }
 
         cost = credits * COSTECREDITOS;
