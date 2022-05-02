@@ -21,7 +21,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         Matricula matricula1;
-        ArrayList<Assignatura> lista = new ArrayList();
+        ArrayList<Assignatura> listaAssignatura = new ArrayList();
         String nomAssig = "Assignatura ";
         Estudiante persona = new Estudiante(1, "20489640K", "Aitor", "Rodriguez");
         int hores = 3, credits = 5;
@@ -29,10 +29,10 @@ public class Principal {
         
         //For para añadir asignaturas a la lista
         for (int i = 1; i <= 5; i++) {
-            lista.add(new Assignatura(i, nomAssig + i, hores, credits, disponible));
+            listaAssignatura.add(new Assignatura(i, nomAssig + i, hores, credits, disponible));
         }
 
-        matricula1 = new Matricula(1, persona, 5, lista);
+        matricula1 = new Matricula(1, persona, 5, listaAssignatura);
 
         System.out.print("Cost de la matricula " + matricula1.costMatricula());
 
