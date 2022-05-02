@@ -10,11 +10,11 @@ package desenvolupament;
  * @author aitgal
  */
 public class Estudiante {
-
+    
+    private long id = 0;//Ponemos id a Estudiante porque lo tienen matricula y assignatura
     private String dni = "";
     private String nom = "";
     private String cognom = "";
-    private int edad = 5;//Asumimos que la edad minima para matricularse es 5 años
     
     /**
      * Constructor por defecto para la clase Estudiante
@@ -25,18 +25,26 @@ public class Estudiante {
     
     /**
      * Contructor con todos los atributos de la clase Estudiante
+     * @param id ID del Estudiante
      * @param dni DNI del Estudiante
      * @param nom Nombre del Estudiante
      * @param cognom Apellidos del Estudiante
-     * @param edad Edad del Estudiante
      */
-    public Estudiante(String dni, String nom, String cognom, int edad) {
+    public Estudiante(long id, String dni, String nom, String cognom) {
+        this.id = id;
         this.dni = dni;
         this.nom = nom;
         this.cognom = cognom;
-        this.edad = edad;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+    
     public String getDni() {
         return dni;
     }
@@ -59,14 +67,6 @@ public class Estudiante {
 
     public void setCognom(String cognom) {
         this.cognom = cognom;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
 }
