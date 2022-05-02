@@ -23,7 +23,7 @@ public class Principal {
         Matricula matricula1;
         ArrayList<Assignatura> lista = new ArrayList();
         String nomAssig = "Assignatura ";
-        Estudiante persona = new Estudiante("20489640K", "Aitor", "Rodriguez", 20);
+        Estudiante persona = new Estudiante(1, "20489640K", "Aitor", "Rodriguez");
         int hores = 3, credits = 5;
         boolean disponible = true;
         
