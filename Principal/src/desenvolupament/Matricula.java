@@ -51,28 +51,12 @@ public class Matricula {
         this.id = id;
     }
 
-    public String getNom() {
-        return persona.getNom();
+    public Estudiante getPersona() {
+        return persona;
     }
 
-    public void setNom(String nom) {
-        this.persona.setNom(nom);
-    }
-
-    public String getCognoms() {
-        return persona.getCognom();
-    }
-
-    public void setCognoms(String cognoms) {
-        this.persona.setCognom(cognoms);
-    }
-
-    public String getDni() {
-        return persona.getDni();
-    }
-
-    public void setDni(String dni) {
-        this.persona.setDni(dni);
+    public void setPersona(Estudiante persona) {
+        this.persona = persona;
     }
 
     public int getCurs() {
